@@ -121,3 +121,23 @@ button.btn {
 .about .address .about-info .info-title{
     margin-bottom: -60px;
 }
+
+/* about-pro section styling */
+
+.about-pro{
+    padding: 0 150px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 26px;
+}
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}

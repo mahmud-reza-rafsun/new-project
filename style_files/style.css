@@ -1,0 +1,44 @@
+/* additional styles */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.text-primary{
+    color: #F96E0B;
+}
+.primary-btn{
+    background-color: #F96E0B;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* navbar styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    font-size: 45px;
+    color: #181818;
+    font-weight: 800;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #F96E0B;
+}

@@ -15,11 +15,15 @@
     font-weight: 700;
     cursor: pointer;
 }
-/* navbar styling */
+/* header section styling */
+.header-section{
+    background-color: #fff8f3;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 200px;
 }
 .nav-title{
     font-size: 45px;
@@ -32,7 +36,7 @@ nav > ul{
 }
 nav li{
     list-style-type: none;
-    margin-right: 50px;
+    margin-left: 50px;
 }
 nav a{
     text-decoration: none;
@@ -41,4 +45,24 @@ nav a{
 }
 nav a:hover{
     color: #F96E0B;
+}
+/* banner section styling */
+
+.banner{
+    display: flex;
+    padding: 30px 30px 30px 200px;
+}
+button.btn {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #F96E0B;
+    color: #F96E0B;
+    padding: 13px 41px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.banner .profile-img{
+    width: 500px;
 }

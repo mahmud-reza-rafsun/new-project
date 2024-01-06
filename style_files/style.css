@@ -18,12 +18,15 @@
 /* header section styling */
 .header-section{
     background-color: #fff8f3;
+    background-image: url("../images/header_bg.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 200px;
+    margin: 0 120px;
 }
 .nav-title{
     font-size: 45px;
@@ -50,7 +53,27 @@ nav a:hover{
 
 .banner{
     display: flex;
-    padding: 30px 30px 30px 200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 0px 120px;
+}
+.banner-content{
+    max-width: 450px;
+}
+.banner-greeting{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: -0;
+}
+.banner-title{
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: -0;
+}
+.banner-disc{
+    font-size: 17px;
+    color: #757575;
 }
 button.btn {
     background-color: #fff;

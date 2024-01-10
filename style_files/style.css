@@ -1,143 +1,96 @@
-/* additional styles */
 *{
-    font-family: 'Open Sans', sans-serif;
-}
-.text-primary{
-    color: #F96E0B;
-}
-.primary-btn{
-    background-color: #F96E0B;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    padding: 15px 35px;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-}
-.section-title{
-    font-size: 35px;
-    color: #181818;
-    text-align: center;
-    font-weight: 700;
-}
-/* header section styling */
-.header-section{
-    background-color: #fff8f3;
-    background-image: url("../images/header_bg.png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 120px;
-}
-.nav-title{
-    font-size: 45px;
-    color: #181818;
-    font-weight: 800;
-}
-nav > ul{
-    display: flex;
-    align-items: center;
-}
-nav li{
-    list-style-type: none;
-    margin-left: 50px;
-}
-nav a{
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    color: #474747;
-    transition: color 0.3s ease;
+    box-sizing: border-box;
 }
-nav a:hover{
-    color: #F96E0B;
+/* additional css for layout */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
-/* banner section styling */
-
-.banner{
+.navbar .max-width{
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: space-between;
-    padding: 30px 30px 0px 120px;
 }
-.banner-content{
-    max-width: 450px;
+/* navbar styling */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
 }
-.banner-greeting{
-    font-size: 40px;
+.navbar.sticky{
+   background-color: crimson;
+    padding: 14px 0; 
+}
+.navbar .logo a{
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: -0;
+    color: #fff;
 }
-.banner-title{
-    font-size: 70px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: -0;
+.navbar .logo a span{
+    color: crimson;
 }
-.banner-disc{
-    font-size: 17px;
-    color: #757575;
+.navbar.sticky .logo a span{
+    color: #fff;
 }
-button.btn {
-    background-color: #fff;
-    border-radius: 5px;
-    border: 2px solid #F96E0B;
-    color: #F96E0B;
-    padding: 13px 41px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 12px;
-}
-.banner .profile-img{
-    width: 500px;
-}
-
-/* about section styling */
-
-.about{
-    background: #FFF8F3;
-    border-radius: 10px;
-    margin: 130px 120px 130px 120px;
-    padding: 100px 150px;
-}  
-.address{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.about .address p{
-    font-size: 18px;
-    color: #757575;
-    text-align: center;
+.navbar .menu li{
     display: inline-block;
+    list-style: none;
 }
-.about .address{
-    text-align: center;
+.navbar .menu li a {
+	font-size: 18px;
+	color: #fff;
+	margin-left: 25px;
+	font-weight: 500;
+	transition: color 0.3s ease;
+	margin-top: 8px;
+	display: block;
 }
-.about .address .about-info .info-title{
-    margin-bottom: -60px;
+.navbar .menu li a:hover{
+    color: crimson;
 }
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+/* menu-btn styling */
+.menu-btn{
+    font-size: 23px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+/* home section styling */
 
-/* about-pro section styling */
-
-.about-pro{
-    padding: 0 150px;
-}
-.box{
+.home{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    gap: 26px;
+    background: url("../images/banner.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
-.card {
-    background: #FFFFFF;
-    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
-    border-radius: 5px;
-    padding: 30px;
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 45px;
+    margin: 10px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
 }
